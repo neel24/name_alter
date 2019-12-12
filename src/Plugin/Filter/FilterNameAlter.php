@@ -4,6 +4,7 @@ namespace Drupal\name_alter\Plugin\Filter;
 
 use Drupal\filter\FilterProcessResult;
 use Drupal\filter\Plugin\FilterBase;
+
 /**
  * Replaces any instance of the [name:FIRSTNAME:LASTNAME] token.
  *
@@ -15,6 +16,7 @@ use Drupal\filter\Plugin\FilterBase;
  * )
  */
 class FilterNameAlter extends FilterBase {
+
   /**
    * {@inheritdoc}
    */
@@ -28,4 +30,5 @@ class FilterNameAlter extends FilterBase {
 
     return new FilterProcessResult($new_text);
   }
+
 }
